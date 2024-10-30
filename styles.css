@@ -1,0 +1,124 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1,
+h2 {
+  color: #444;
+}
+
+/* Estilo da lista de usuários */
+#user-list {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#user-list div:last-child {
+  border-bottom: none;
+}
+
+/* Estilo para informações do usuário */
+.user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Estilo para botões de ação */
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 620px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos campos de entrada e botões */
+input,
+button {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  padding: 8px 12px;
+  margin: 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Estilo da mensagem de carregamento */
+#loading-message {
+  color: #007bff;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciar Usuários</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Gerenciar Usuários</h1>
+    <p id="loading-message" style="display: none">Carregando usuários...</p>
+    <div id="user-list"></div>
+
+    <div class="form-container">
+      <form id="search-user-form">
+        <h2>Buscar Usuário</h2>
+        <input
+          type="email"
+          id="search-email"
+          placeholder="Digite o e-mail do usuário"
+          required
+        />
+        <button type="submit" class="btn-search">Buscar</button>
+      </form>
+
+      <form id="add-user-form">
+        <h2 class="create-title">Criar Novo Usuário</h2>
+        <input type="text" id="name" placeholder="Nome" required />
+        <input type="email" id="email" placeholder="E-mail" required />
+        <button type="submit" class="btn-create">Adicionar Usuário</button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
